@@ -294,7 +294,7 @@
         el.children[0].style[key] = transform;
       }
       if (!this.lastRenderedProgress || this.lastRenderedProgress | 0 !== this.progress | 0) {
-        el.children[0].setAttribute('data-progress-text', "" + (this.progress | 0) + "%");
+        el.children[0].setAttribute('data-progress-text', "" + (this.progress | 0));
         if (this.progress >= 100) {
           progressStr = '99';
         } else {
