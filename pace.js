@@ -774,6 +774,7 @@
       this.progress = Math.max(0, this.progress);
       this.progress = Math.min(100, this.progress);
       this.lastProgress = this.progress;
+      Pace.trigger('update');
       return this.progress;
     };
 
